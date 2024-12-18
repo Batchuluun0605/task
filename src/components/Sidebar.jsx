@@ -30,55 +30,48 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`d-flex flex-column bg-dark text-white gap`}
+      className={`d-flex flex-column bg-dark text-white gap position-relative p-3`}
       style={{
-        width: isCollapsed ? "100px" : "250px",
-        transition: "all 0.3s",
+        maxWidth: isCollapsed ? "100px" : "100%",
+        transition: "all 0.2s",
         height: "100vh",
       }}
     >
-      <div className="d-flex justify-content-between p-3">
+      <div className="d-flex justify-content-between ">
         <span style={{ fontSize: "24px" }} className=" ">
           Logo
         </span>
         <button onClick={toggleSidebar} className="btn btn-link text-white">
-          {isCollapsed ? (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="white"
-              className="bi bi-caret-right-fill"
-              viewBox="0 0 16 16"
-            >
-              <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-            </svg>
-          ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="white"
-              className="bi bi-caret-left-fill"
-              viewBox="0 0 16 16"
-            >
-              <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
-            </svg>
-          )}
+          <i
+            className={`${
+              isCollapsed
+                ? "bi bi-arrow-right-circle"
+                : "bi bi-arrow-left-circle"
+            } position-absolute fs-4 z-1 text-success`}
+            style={{ top: "40px", right: "-6px" }}
+          ></i>
         </button>
       </div>
-      <Nav className="flex-column">
+      <Nav className="flex-column py-2">
         {data.map((item) => {
           return (
-            <Nav.Link href="#" className="text-white d-flex gap-3">
-              <i
-                className={`${
-                  item.icon
-                } d-flex justify-content-center align-items-center  ${
-                  isCollapsed ? "fs-4" : ""
-                } `}
-              ></i>
-              <span className={isCollapsed ? "d-none" : ""}>{item.value}</span>
+            <Nav.Link
+              href="#"
+              className={`${
+                item.id === "dashboard" ? "bg-primary rounded " : ""
+              } text-white d-flex gap-3 align-items-center p-2 rounded w-auto `}
+              style={{
+                transition: "all 0.3",
+              }}
+              key={item.id}
+            >
+              <i className={`${item.icon} fs-4 justify-content-center `}></i>
+              <span
+                className={`${isCollapsed ? "d-none" : "d-block"} `}
+                style={{ animation: "all 0.2s" }}
+              >
+                {item.value}
+              </span>
             </Nav.Link>
           );
         })}
