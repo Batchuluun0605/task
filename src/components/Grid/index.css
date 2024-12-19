@@ -1,0 +1,36 @@
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.img1 {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: retry 70% cover;
+}
+
+.row-p {
+  /* color: aqua; */
+  animation-name: slideInOpacity;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInOpacity {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
