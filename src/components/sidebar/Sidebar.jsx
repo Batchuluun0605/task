@@ -33,6 +33,8 @@ const Sidebar = () => {
             } `}
             aria-current="page"
             title="Home"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
           >
             <i class="bi bi-house fs-4"></i>
             <span className={isCollapse ? "d-none" : "d-block"}>Home</span>
@@ -136,6 +138,15 @@ const Sidebar = () => {
         style={{ right: "-10px" }}
         onClick={handleCollapse}
       ></i>
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-bs-toggle="tooltip"
+        data-bs-placement="right"
+        title="Tooltip on right"
+      >
+        Tooltip on right
+      </button>
     </div>
   );
 };
