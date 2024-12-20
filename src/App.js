@@ -23,6 +23,7 @@ function App() {
         {/* <Grid /> */}
         {/* <Text /> */}
         <Img />
+        <Button variant="primary">Primary</Button>
       </div>
     </div>
   );
