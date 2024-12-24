@@ -9,22 +9,24 @@ import Grid from "./components/Grid/Grid";
 import Text from "./components/Text/Text";
 import Img from "./components/Img/Img";
 import Sidebar from "./components/sidebar/Sidebar";
+import BootstrapResponsive from "./components/BootstrapResponsive";
 
 function App() {
   return (
     <div className="d-flex w-100 align-items-start">
-      <div className=" position-sticky">
+      {/* <div className=" position-sticky">
         <Sidebar />
-      </div>
+      </div> */}
 
-      <div className=" h-auto w-100 ">
+      {/* <div className=" h-auto w-100 ">
         {/* <ResponsiveTable />
         <BeforeAndAfter /> */}
-        {/* <Grid /> */}
-        {/* <Text /> */}
-        <Img />
-        <Button variant="primary">Primary</Button>
-      </div>
+      {/* <Grid /> */}
+      {/* <Text /> */}
+      {/* <Img />
+        <Button variant="primary">Primary</Button> */}
+      {/* </div> */}
+      <BootstrapResponsive />
     </div>
   );
 }
