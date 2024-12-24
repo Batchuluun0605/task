@@ -9,6 +9,7 @@ import Grid from "./components/Grid/Grid";
 import Text from "./components/Text/Text";
 import Img from "./components/Img/Img";
 import Sidebar from "./components/sidebar/Sidebar";
+import { Button } from "react-bootstrap";
 import BootstrapResponsive from "./components/BootstrapResponsive";
 
 function App() {
