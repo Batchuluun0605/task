@@ -17,12 +17,7 @@ function App() {
       <div className=" position-sticky">
         <Sidebar />
       </div>
-
       <div className=" h-auto w-100 ">
-        {/* <ResponsiveTable />
-        <BeforeAndAfter /> */}
-        {/* <Grid /> */}
-        {/* <Text /> */}
         <Img />
         <Button variant="primary">Primary</Button>
       </div>
