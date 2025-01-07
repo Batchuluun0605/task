@@ -10,18 +10,13 @@ import Text from "./components/Text/Text";
 import Img from "./components/Img/Img";
 import Sidebar from "./components/sidebar/Sidebar";
 import { Button } from "react-bootstrap";
+import Modal from "./components/Modal/Modal";
 
 function App() {
   return (
-    <div className="d-flex w-100 align-items-start">
-      <div className=" position-sticky">
-        <Sidebar />
-      </div>
-      <div className=" h-auto w-100 ">
-        <Img />
-        <Button variant="primary">Primary</Button>
-      </div>
-    </div>
+    <>
+      <Modal />
+    </>
   );
 }
 
