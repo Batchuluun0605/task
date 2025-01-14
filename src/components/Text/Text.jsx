@@ -12,6 +12,8 @@ const Text = () => {
         You can use the mark tag to
         <mark className=" text-danger bg-success">highlight</mark> text. You can
         use the mark tag to
+        <mark className=" text-danger bg-success">highlight</mark> text. use the
+        mark tag to
         <mark className=" text-danger bg-success">highlight</mark> text.
       </p>
     </div>
