@@ -11,6 +11,14 @@ const ResponsiveTable = () => {
       location: "New York",
     },
     {
+      id: 1,
+      name: "John Doe",
+      fname: "jorj",
+      age: 25,
+      year: 2002,
+      location: "New York",
+    },
+    {
       id: 2,
       name: "Jane Smith",
       fname: "jorj",
