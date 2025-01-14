@@ -3,11 +3,11 @@ body.active-modal {
   overflow-y: hidden;
 }
 
-.container {
+/* .container {
   position: relative;
   height: 100vh;
   width: 100vw;
-}
+} */
 
 /* Button for triggering modal */
 .btn-modal {
@@ -20,7 +20,7 @@ body.active-modal {
 
 /* Modal overlay covering the screen */
 .overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%; /* Full width */
@@ -30,10 +30,6 @@ body.active-modal {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.modal.active-modal {
-  display: block;
 }
 
 /* Modal content styling */
