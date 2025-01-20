@@ -11,3 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.color {
+  font-size: clamp(30px, 4vw, 100px);
+}

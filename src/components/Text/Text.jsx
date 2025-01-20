@@ -1,5 +1,8 @@
 import "./index.css";
 const Text = () => {
+  let text = "Mr Blue has a blue";
+  let modifiedText = text.replace(/ /g, "-");
+  console.log(modifiedText);
   return (
     <div className="container">
       <p className="text">Typewriter CSS.</p>
