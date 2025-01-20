@@ -1,5 +1,8 @@
 import "./index.css";
 const Text = () => {
+  let text = "Mr Blue has a blue";
+  let modifiedText = text.replace(/ /g, "-");
+  console.log(modifiedText);
   return (
     <div className="container">
       <p className="text">Typewriter CSS.</p>
@@ -13,10 +16,6 @@ const Text = () => {
         <mark className=" text-danger bg-success">highlight</mark> text. You can
         use the mark tag to
         <mark className=" text-danger bg-success">highlight</mark> text. use the
-        mark tag to
-        <mark className=" text-danger bg-success">highlight</mark> text. mark
-        tag to
-        <mark className=" text-danger bg-success">highlight</mark> text.
       </p>
     </div>
   );
