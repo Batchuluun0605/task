@@ -1,7 +1,7 @@
 const Button = () => {
   return (
     <div style={{ backgroundColor: "red" }}>
-      <button>Сайн байна уу</button>
+      <button>Сайн байна уу.</button>
     </div>
   );
 };
